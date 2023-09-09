@@ -1,0 +1,583 @@
+:root {
+	--bg-color: rgba(41, 36, 56, 1);
+	--accent-color: rgba(191,103,10,1);	
+}
+
+html, body {
+	background-color: var(--bg-color);
+	color: var(--white);
+}
+
+header nav {
+	background: rgba(23, 16, 50, 1);
+}
+
+header .gradient {
+	position: absolute;
+	z-index: 10;
+	height: 2.5rem;
+	width: 100%;
+	background: linear-gradient(to top,rgba(0,0,0,0), rgba(23, 16, 50, 1));
+}
+
+header nav ul li a{
+	color: var(--white);
+}
+
+header nav ul li a:hover{
+	color: var(--accent-color);
+	/* text-decoration: none; */
+	animation: hovering 0.2s linear;
+}
+
+@keyframes hovering {
+	0% {
+		color: var(--white);
+	}
+
+	100% {
+		color: var(--accent-color);
+	}
+}
+
+@keyframes nav-hover2 {
+	0% {
+		color: var(--bg-color);
+	}
+
+	100% {
+		color: var(--accent-color);
+	}
+}
+
+section.banner{
+	--size: 100vw;
+	position: relative;
+	width: var(--size);
+	height: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://cdn.discordapp.com/attachments/1149629267290886254/1149921954707537971/CATIONE.jpg") center / cover no-repeat;
+}
+
+section.banner .gradient-banner {
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	bottom: 0;
+	height: 10rem;
+	width: 100%;
+	background: linear-gradient(to bottom,rgba(0,0,0,0), var(--bg-color));
+}
+
+section.about {
+	display: flex;
+	margin-left: 5%;
+	margin-top: 5rem;
+	flex-direction: column;
+	width: 90%;
+	align-items: center;
+	text-shadow: 0 0 1rem var(--white);
+}
+
+section.about h1 {
+	font-weight: 700;
+}
+
+section.timeline {
+	display: flex;
+	margin-left: 5%;
+	margin-top: 5rem;
+	flex-direction: column;
+	width: 90%;
+	align-items: center;
+	text-shadow: 0 0 1rem var(--white);
+}
+
+section.timeline h1 {
+	font-weight: 700;
+}
+
+.gambar-timeline {
+	--size: 100vw;
+	position: relative;
+	height: var(--size);
+	width: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://cdn.discordapp.com/attachments/1149629267290886254/1149931784214163516/Timeline_-_Magang.png") center / cover no-repeat;
+}
+
+section.activities {
+	display: flex;
+	margin-left: 5%;
+	margin-top: 5rem;
+	flex-direction: column;
+	width: 90%;
+	align-items: center;
+	text-shadow: 0 0 1rem var(--white);
+}
+
+section.activities .header{
+	margin-bottom: 3rem;
+}
+
+section.activities .header h1 {
+	font-weight: 700;
+	text-align: center;
+	align-items: center;
+}
+
+#gambar {
+	--size: 30vw;
+	position: relative;
+	width: var(--size);
+	height: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://cdn.discordapp.com/attachments/1149629267290886254/1149642793124372540/B100118-3-scaled.png") center / cover no-repeat;
+}
+
+.gambar {
+	margin: 1rem;
+	border-radius: 0.625rem;
+}
+
+section.activities div.ganjil #gambar-1 {
+	--size: 30vw;
+	position: relative;
+	width: var(--size);
+	height: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://cdn.discordapp.com/attachments/1149629267290886254/1150047682711277680/A_Seasonal_Gathering__Fall_Harvest.jpeg") center / cover no-repeat;
+}
+
+section.activities div.genap #gambar-2 {
+	--size: 30vw;
+	position: relative;
+	width: var(--size);
+	height: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://cdn.discordapp.com/attachments/1149629267290886254/1150047901251280946/Photobooth_mariage___25_idees_pour_samuser_.jpeg") 50% 20% / cover no-repeat;
+}
+
+section.activities div.ganjil #gambar-3 {
+	--size: 30vw;
+	position: relative;
+	width: var(--size);
+	height: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://cdn.discordapp.com/attachments/1149629267290886254/1150048157376454786/The_Vamps_give_electrifying_performance_on_BGT_after_guitarist_James_McVey_shares_outrage_at_One_Direction.jpeg") center / cover no-repeat;
+}
+
+section.activities div.genap #gambar-4 {
+	--size: 30vw;
+	position: relative;
+	width: var(--size);
+	height: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://cdn.discordapp.com/attachments/1149629267290886254/1150048841987522640/renungan.jpg") center / cover no-repeat;
+}
+
+section.activities div.ganjil #gambar-5 {
+	--size: 30vw;
+	position: relative;
+	width: var(--size);
+	height: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://cdn.discordapp.com/attachments/1149629267290886254/1150049095600320523/Cooking_School_Day_1__Knife_Skills.jpeg") center / cover no-repeat;
+}
+
+section.activities div.genap #gambar-6 {
+	--size: 30vw;
+	position: relative;
+	width: var(--size);
+	height: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://cdn.discordapp.com/attachments/1149629267290886254/1150049388148817991/50_Fun_Things_You_Can_Do_With_the_Kids_So_They_Arent_Ever_Bored_Out_of_Their_Minds.jpeg") 50% 40% / cover no-repeat;
+}
+
+section.activities div.ganjil #gambar-7 {
+	--size: 30vw;
+	position: relative;
+	width: var(--size);
+	height: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://cdn.discordapp.com/attachments/1149629267290886254/1150049869021589606/Art_Culture_Festival___Art_galleries_in_south_delhi.jpeg") center / cover no-repeat;
+}
+
+section.activities div.genap #gambar-8 {
+	--size: 30vw;
+	position: relative;
+	width: var(--size);
+	height: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://cdn.discordapp.com/attachments/1149629267290886254/1150050380101713960/Water_Fun__Summer_Activities_for_Kids.jpeg") center / cover no-repeat;
+}
+
+
+section.highlight #gambar-food-gathering {
+	--size: 30vw;
+	position: relative;
+	width: var(--size);
+	height: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://cdn.discordapp.com/attachments/1149629267290886254/1149700591581405274/Tasty_dinner.jpeg") center / cover no-repeat;
+}
+
+section.highlight #gambar-cooking {
+	--size: 30vw;
+	position: relative;
+	width: var(--size);
+	height: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://media.discordapp.net/attachments/1149629267290886254/1149700591904358483/Cook_a_Moroccan_dish_with_a_local_chef_4_95.jpeg?width=441&height=662") 50% 40% / cover no-repeat;
+}
+
+section.highlight #gambar-food-bazaar {
+	--size: 30vw;
+	position: relative;
+	width: var(--size);
+	height: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://cdn.discordapp.com/attachments/1149629267290886254/1149915782675959859/Foodie_Alert__15_Fabulous_Food_Festivals_in_India_That_You_Just_Cant_Afford_To_Miss.jpeg") center / cover no-repeat;
+}
+
+section.highlight #gambar-mini-concert {
+	--size: 30vw;
+	position: relative;
+	width: var(--size);
+	height: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://cdn.discordapp.com/attachments/1149629267290886254/1149704571120263289/driver_era_concert.jpeg") center / cover no-repeat;
+}
+
+section.highlight #gambar-fire-work-show {
+	--size: 30vw;
+	position: relative;
+	width: var(--size);
+	height: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://cdn.discordapp.com/attachments/1149629267290886254/1149705323221893310/8_Tips_for_Better_Fireworks_Photos.jpeg") center / cover no-repeat;
+}
+section.highlight #gambar-photobooth{
+	--size: 30vw;
+	position: relative;
+	width: var(--size);
+	height: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://cdn.discordapp.com/attachments/1149629267290886254/1149707071437148281/Korean_Photobooth_Photos.jpeg") center / cover no-repeat;
+}
+
+
+.ganjil {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 4rem;
+	border: 0.2rem solid white;
+	/* box-shadow: -1px 1px 20px 1px white; */
+	box-shadow: -0.063rem 0.063rem 1.25rem 0.063rem white;
+	border-radius: 0.625rem;
+}
+
+.genap {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	margin-bottom: 4rem;
+	border: 0.2rem solid white;
+	box-shadow: -0.063rem 0.063rem 1.25rem 0.063rem white;
+	border-radius: 0.625rem;
+}
+
+.ganjil-reverse {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 4rem;
+	border: 0.2rem solid white;
+	/* box-shadow: -1px 1px 20px 1px white; */
+	box-shadow: -0.063rem 0.063rem 1.25rem 0.063rem white;
+	border-radius: 0.625rem;
+}
+
+.genap-reverse {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	margin-bottom: 4rem;
+	border: 0.2rem solid white;
+	box-shadow: -0.063rem 0.063rem 1.25rem 0.063rem white;
+	border-radius: 0.625rem;
+}
+
+h2.subheading {
+	color: white;
+	font-weight: bold;
+}
+
+section.activities .ganjil #penjelasan {
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	margin: 1rem;
+	align-items: center;
+}
+
+section.activities .genap #penjelasan {
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	margin: 1rem;
+	align-items: center;
+}
+
+section.activities .ganjil #gambar {
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	margin: 1rem;
+	align-items: center;
+	border-radius: 1rem;
+}
+
+section.activities .genap #gambar {
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	align-items: center;
+	border-radius: 1rem;
+}
+
+div.content h5 { /* PENJELASAN EVENT (JUSTIFY TEXT)*/
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+section.highlight .ganjil-reverse #penjelasan {
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	margin: 1rem;
+	align-items: center;
+}
+
+section.highlight .genap-reverse #penjelasan {
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	margin: 1rem;
+	align-items: center;
+}
+
+section.highlight {
+	display: flex;
+	margin-left: 5%;
+	margin-top: 5rem;
+	flex-direction: column;
+	width: 90%;
+	text-shadow: 0 0 1rem var(--white);
+}
+
+section.highlight h1 {
+	font-weight: 700;
+	margin-bottom: 3rem;
+	display: flex;
+	justify-content: center;
+}
+
+@keyframes footer-hover {
+	0% {color: var(--accent-color);}
+	100% {color: var(--bg-color);}
+}
+
+footer {
+	background-color: rgb(1, 1, 1);
+	color: var(--accent-color);
+}
+
+footer .gradient {
+	background: linear-gradient(var(--bg-color), rgb(1, 1, 1));
+}
+
+footer .footer-content a{
+	color: var(--accent-color);
+	text-decoration: none;
+}
+
+footer .footer-content a:hover{
+	color: var(--bg-color);
+	animation: footer-hover 0.2s linear;
+}
+
+footer .column2 a h1{
+	margin: 0;
+	color: var(--accent-color);
+}
+
+footer .column3 a h2{
+	margin: 0;
+	color: var(--accent-color);
+}
+
+footer .copyright {
+	background: var(--accent-color);
+	color: rgba(1, 1, 1, 1);
+}
+
+@media screen and (max-width : 850px) {
+	section.banner .gradient-banner {
+		height: 5rem;
+	}
+}
+
+@media screen and (max-width : 740px) {
+	div.content h5 {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width : 590px) {
+	header nav ul.menu-nav{
+		background-color: var(--bg-color);
+	}
+
+	div.content h5 {
+		font-size: 15px;
+	}
+	
+	/* ACTIVITY */
+	section.activities div.ganjil #gambar-1 {
+		height: 30rem;
+		width: 20rem;
+	}
+	section.activities div.genap #gambar-2 {
+		height: 30rem;
+		width: 20rem;
+	}
+	section.activities div.ganjil #gambar-3 {
+		height: 30rem;
+		width: 20rem;
+	}
+	section.activities div.genap #gambar-4 {
+		height: 30rem;
+		width: 20rem;
+	}
+	section.activities div.ganjil #gambar-5 {
+		height: 30rem;
+		width: 20rem;
+	}
+	section.activities div.genap #gambar-6 {
+		height: 30rem;
+		width: 20rem;
+	}
+	section.activities div.ganjil #gambar-7 {
+		height: 30rem;
+		width: 20rem;
+	}
+	section.activities div.genap #gambar-8 {
+		height: 30rem;
+		width: 20rem;
+	}
+
+	/* HIGHLIHGT */
+	section.highlight #gambar-food-gathering {
+		height: 30rem;
+		width: 20rem;
+	}
+	
+	section.highlight #gambar-cooking {
+		height: 30rem;
+		width: 20rem;
+	}
+	
+	section.highlight #gambar-food-bazaar {
+		height: 30rem;
+		width: 20rem;
+	}
+	
+	section.highlight #gambar-mini-concert {
+		height: 30rem;
+		width: 20rem;
+	}
+	
+	section.highlight #gambar-fire-work-show {
+		height: 30rem;
+		width: 20rem;
+	}
+	section.highlight #gambar-photobooth{
+		height: 30rem;
+		width: 20rem;
+	}
+
+	.ganjil {
+		flex-direction: column;
+	
+	}
+	
+	.ganjil .gambar {
+		flex-direction: column;
+	
+	}
+	
+	.genap{
+		flex-direction: column;
+	}
+
+	.ganjil-reverse {
+		flex-direction: column-reverse;
+	}
+
+	.genap-reverse {
+		flex-direction: column-reverse;
+	}
+}
